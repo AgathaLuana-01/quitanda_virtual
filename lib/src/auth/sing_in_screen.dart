@@ -1,5 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:quitanda_virtual/src/auth/sing_up_scren.dart';
 import 'package:quitanda_virtual/src/config/custom_colors.dart';
 
 import 'components/custom_text_field.dart';
@@ -162,7 +163,13 @@ class SingInScreen extends StatelessWidget {
                             color: Colors.green,
                           ),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(builder: (c) {
+                              return  SingUpScreen();
+                            }),
+                          );
+                        },
                         child: const Text(
                           'Ciar conta',
                           style: TextStyle(
