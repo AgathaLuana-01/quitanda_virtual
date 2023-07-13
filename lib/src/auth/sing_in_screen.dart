@@ -1,5 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:quitanda_virtual/src/config/custom_colors.dart';
 
 import 'componentes/custom_text_field.dart';
 
@@ -9,7 +10,7 @@ class SingInScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
+      backgroundColor: CustomColors.customSwatchColor,
       body: Column(
         children: [
           Expanded(
@@ -17,13 +18,13 @@ class SingInScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 //Nome do App
-                const Text.rich(
+                Text.rich(
                   TextSpan(
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 40,
                     ),
                     children: [
-                      TextSpan(
+                      const TextSpan(
                         text: 'Green',
                         style: TextStyle(
                           color: Colors.white,
@@ -33,7 +34,7 @@ class SingInScreen extends StatelessWidget {
                       TextSpan(
                         text: 'grocer',
                         style: TextStyle(
-                          color: Colors.red,
+                          color: CustomColors.customContrastColor,
                         ),
                       ),
                     ],
@@ -64,7 +65,7 @@ class SingInScreen extends StatelessWidget {
             ),
           ),
 
-          //Formilário
+          //Formulário
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 40),
             decoration: const BoxDecoration(
@@ -110,9 +111,9 @@ class SingInScreen extends StatelessWidget {
                   alignment: Alignment.centerRight,
                   child: TextButton(
                     onPressed: () {},
-                    child: const Text(
+                    child: Text(
                       'Esqueceu senha?',
-                      style: TextStyle(color: Colors.red),
+                      style: TextStyle(color: CustomColors.customContrastColor),
                     ),
                   ),
                 ),
