@@ -3,14 +3,17 @@ import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'package:quitanda_virtual/src/auth/components/custom_text_field.dart';
 import 'package:quitanda_virtual/src/config/custom_colors.dart';
 
-//aula 12
 class SingUpScreen extends StatelessWidget {
   SingUpScreen({super.key});
 
   final cpfFormatter = MaskTextInputFormatter(
-      mask: '###.###.###-##', filter: {'#': RegExp(r'[0-9]')});
+    mask: '###.###.###-##',
+    filter: {'#': RegExp(r'[0-9]')},
+  );
   final phoneFormatter = MaskTextInputFormatter(
-      mask: '## # ####-####', filter: {'#': RegExp(r'[0-9]')});
+    mask: '## # ####-####',
+    filter: {'#': RegExp(r'[0-9]')},
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -77,7 +80,9 @@ class SingUpScreen extends StatelessWidget {
                             ),
                             child: const Text(
                               'Cadastrar usuário',
-                              style: TextStyle(fontSize: 18),
+                              style: TextStyle(
+                                fontSize: 18,
+                              ),
                             ),
                           ),
                         ),
