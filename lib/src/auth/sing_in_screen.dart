@@ -110,7 +110,7 @@ class SingInScreen extends StatelessWidget {
                         onPressed: () {
                           Navigator.of(context)
                               .pushReplacement(MaterialPageRoute(builder: (c) {
-                            return  BaseScreen();
+                            return const BaseScreen();
                           }));
                         },
                         child: const Text(
