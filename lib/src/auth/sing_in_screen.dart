@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:quitanda_virtual/src/auth/sing_up_scren.dart';
 import 'package:quitanda_virtual/src/config/custom_colors.dart';
 
+import '../base/base_screen.dart';
 import 'components/custom_text_field.dart';
 
 class SingInScreen extends StatelessWidget {
@@ -106,7 +107,12 @@ class SingInScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(18),
                           ),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context)
+                              .pushReplacement(MaterialPageRoute(builder: (c) {
+                            return const BaseScreen();
+                          }));
+                        },
                         child: const Text(
                           'Entrar',
                           style: TextStyle(fontSize: 18),
@@ -166,7 +172,7 @@ class SingInScreen extends StatelessWidget {
                         onPressed: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(builder: (c) {
-                              return  SingUpScreen();
+                              return SingUpScreen();
                             }),
                           );
                         },
