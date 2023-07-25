@@ -1,6 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:quitanda_virtual/src/auth/sing_up_scren.dart';
+import 'package:quitanda_virtual/src/pages/auth/sing_up_scren.dart';
 import 'package:quitanda_virtual/src/config/custom_colors.dart';
 
 import '../base/base_screen.dart';
