@@ -1,3 +1,4 @@
+import 'package:quitanda_virtual/src/models/cart_item_model.dart';
 import 'package:quitanda_virtual/src/models/item_model.dart';
 
 ItemModel apple = ItemModel(
@@ -82,7 +83,7 @@ ItemModel papaya = ItemModel(
 );
 
 ItemModel peach = ItemModel(
-  itemName: 'Pêssegoa',
+  itemName: 'Pêssego',
   description:
       'O melhor Pêssego da região e que conta com o melhor preço de qualquer quitanda. Este item conta com vitaminas essenciais para o fortalecimento corporal, resultando em uma vida saudável.',
   imgUrl: 'assets/fruits/peach.png',
@@ -114,9 +115,36 @@ List<ItemModel> items = [
 ];
 
 List<String> categories = [
-    'Frutas',
-    'Grãos',
-    'Verduras',
-    'Temperos',
-    'Cereais',
-  ];
+  'Frutas',
+  'Grãos',
+  'Verduras',
+  'Temperos',
+  'Cereais',
+];
+
+List<CartItemModel> cartItens = [
+  CartItemModel(
+    item: apple,
+    quantity: 2,
+  ),
+  CartItemModel(
+    item: mango,
+    quantity: 5,
+  ),
+  CartItemModel(
+    item: melon,
+    quantity: 1,
+  ),
+  CartItemModel(
+    item: lemon,
+    quantity: 8,
+  ),
+  CartItemModel(
+    item: peach,
+    quantity: 2,
+  ),
+  CartItemModel(
+    item: grape,
+    quantity: 5,
+  ),
+];
